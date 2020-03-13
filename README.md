@@ -2,7 +2,7 @@
 Docker file for angular cli dev
 
 # Create New App
-
+```
 [josnin@localhost home]$ pwd
 /home
 
@@ -53,6 +53,8 @@ Compiling @angular/common : es2015 as esm2015
 Compiling @angular/platform-browser : es2015 as esm2015
 
 Compiling @angular/platform-browser-dynamic : es2015 as esm2015
+
+```
 
 
 
