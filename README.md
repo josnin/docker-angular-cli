@@ -54,6 +54,18 @@ Compiling @angular/platform-browser : es2015 as esm2015
 
 Compiling @angular/platform-browser-dynamic : es2015 as esm2015
 
+Compiling @angular/router : es2015 as esm2015
+
+chunk {main} main.js, main.js.map (main) 60.6 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 140 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.15 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 9.99 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 2.99 MB [initial] [rendered]
+Date: 2020-03-13T17:42:56.528Z - Hash: 28d1399e5f8fe8eb28c6 - Time: 153279ms
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+: Compiled successfully.
+
+
 ```
 
 
