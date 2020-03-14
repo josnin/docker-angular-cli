@@ -1,12 +1,16 @@
 # docker-angular-cli
 Docker file for angular cli dev
 
-## Create New App
-```
-[josnin@localhost home]$ pwd
-/home
+## Mount App directory Host to Container, Use Host networks, ReadWrite Directory
+```bash
+[josnin@localhost Document]$ pwd
+/home/Document
 
 [josnin@localhost Document]$ docker run -it --net=host --rm -v $(pwd):/app:z -w /app josnin/angular-cli bash
+```
+
+## Create new App
+```bash
 [root@0b94c6aeb132 app]# ng new my-app
 ? Would you like to add Angular routing? Yes
 ? Which stylesheet format would you like to use? SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
@@ -42,8 +46,8 @@ CREATE my-app/e2e/src/app.e2e-spec.ts (639 bytes)
 CREATE my-app/e2e/src/app.po.ts (301 bytes)
 ```
 
-##RUN APP inside container
-```
+##Running your App nside container
+```bash
 [root:0b94c6aeb132 app]# cd my-app
 [root:0b94c6aeb132 my-app]# ng serve --host 192.168.1.120 --port 4300
 Your global Angular CLI version (9.0.6) is greater than your local
@@ -71,7 +75,7 @@ Date: 2020-03-14T01:03:22.511Z - Hash: aa37d78e082a9bdf3835 - Time: 150815ms
 
 ```
 
-##RUN App outside container
+##Running App outside container
 
 ```
 [josnin@localhost my-app]$ docker run -it --rm -v $(pwd):/home/my-app:z -w /home/my-app josnin/angular-cli bash -c "ng serve --open"
