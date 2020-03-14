@@ -42,7 +42,7 @@ CREATE my-app/e2e/src/app.e2e-spec.ts (639 bytes)
 CREATE my-app/e2e/src/app.po.ts (301 bytes)
 
 
-#RUN App
+#RUN App Outside container
 
 [josnin@localhost my-app]$ docker run -it --rm -v $(pwd):/home/my-app:z -w /home/my-app josnin/angular-cli bash -c "ng serve --open"
 0% compiling
