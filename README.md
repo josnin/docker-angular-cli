@@ -1,5 +1,5 @@
 # docker-angular-cli #
-Docker file for isolated angular cli development (ENVIRONMENT)
+reusable docker container to isolate your angular development environment
 
 ## Mount App directory Host to Container, Use Host networks, ReadWrite Directory 
 ```bash
