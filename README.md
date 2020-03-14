@@ -78,7 +78,7 @@ Date: 2020-03-14T01:03:22.511Z - Hash: aa37d78e082a9bdf3835 - Time: 150815ms
 ### Running App outside container
 
 ```
-[josnin@localhost my-app]$ docker run -it --rm -v $(pwd):/home/my-app:z -w /home/my-app josnin/angular-cli bash -c "ng serve --open"
+[josnin@localhost my-app]$ docker run -it --net=host --rm -v $(pwd):/home/my-app:z -w /home/my-app josnin/angular-cli bash -c "ng serve --open"
 0% compiling
 Compiling @angular/core : es2015 as esm2015
 
