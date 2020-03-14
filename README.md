@@ -1,7 +1,7 @@
 # docker-angular-cli #
 reusable docker container to isolate your angular development environment
 
-### Mount App directory Host to Container, Use Host networks, ReadWrite Directory (Need to make sure folder have RWX permission for your user??)
+### Mount App directory Host to Container, Use Host networks, ReadWrite Directory 
 ```bash
 [josnin@localhost Document]$ pwd
 /home/Document
